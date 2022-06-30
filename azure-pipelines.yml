@@ -23,7 +23,7 @@ steps:
    pip install scikit-learn
   displayName: 'Get required packages'
   
-- script: python src/main.py
+- script: python main.py
 # displayName: 'Run Main'
 
 
