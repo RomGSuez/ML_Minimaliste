@@ -24,7 +24,7 @@ steps:
   displayName: 'Get required packages'
   
 - script: python src/main.py
-displayName: 'Run Main'
+# displayName: 'Run Main'
 
 
 # - task: PythonScript@0
