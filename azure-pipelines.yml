@@ -23,5 +23,13 @@ steps:
    pip install scikit-learn
   displayName: 'Get required packages'
   
-- script: python main.py
-  displayName: 'Run main'
+- script: python src/main.py
+displayName: 'Run Main'
+
+
+# - task: PythonScript@0
+#   inputs:
+#     scriptSource: main.py 
+    
+# - script: python main.py
+#   displayName: 'Run main'
