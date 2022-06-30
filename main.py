@@ -18,4 +18,4 @@ if __name__ == '__main__':
     result=interface.predict_input()
 
     with open('result.txt', 'w') as f:
-    f.write(result)
+        f.write(str(result))
