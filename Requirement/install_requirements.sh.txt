@@ -1,1 +1,5 @@
-pip install -r test/requirements.txt
+
+
+# Install requirements
+
+pip install -r Requirement/requirements.txt
