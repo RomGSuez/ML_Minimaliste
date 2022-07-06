@@ -13,7 +13,7 @@ if __name__ == '__main__':
     
     # tree=Trainer.load_classifier()
     tree=joblib.load('ML\saved_clf_tree.pkl')
-    print(tree)
+    print("oui",tree)
 
     interface=Interface()
     print(interface.predict_input())

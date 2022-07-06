@@ -32,7 +32,7 @@ class Trainer:
     
         
     def load_classifier(): 
-        return  joblib.load('saved_clf_tree.pkl')
+        return  joblib.load('ML\\saved_clf_tree.pkl')
 
     
     
