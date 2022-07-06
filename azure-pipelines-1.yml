@@ -21,7 +21,8 @@ steps:
   displayName: 'Run a multi-line script'
   condition: 
   
-- script: pip install -r Requirement\\requirements.txt
+- script: pip install -r Requirement/requirements.txt
   displayName: 'Install requirements'
 
 - script: python main.py
+  displayName: 'Run Main'
