@@ -17,19 +17,18 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-- script: |
-   pip install pandas
-   pip install numpy
-   pip install scikit-learn
-  displayName: 'Get required packages'
+  
+# - script: |
+#    pip install pandas
+#    pip install numpy
+#    pip install scikit-learn
+#   displayName: 'Get required packages'
+
+- script: pip install -r Requirement\\requirements.txt
+  displayName: 'Install requirements'
   
 - script: python main.py
-# displayName: 'Run Main'
+  displayName: 'Run Main'
 
 
-# - task: PythonScript@0
-#   inputs:
-#     scriptSource: main.py 
-    
-# - script: python main.py
-#   displayName: 'Run main'
+
