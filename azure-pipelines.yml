@@ -24,7 +24,7 @@ steps:
 #    pip install scikit-learn
 #   displayName: 'Get required packages'
 
-- script: pip install -r Requirement\\requirements.txt
+- script: pip install -r Requirement/requirements.txt
   displayName: 'Install requirements'
   
 - script: python main.py
