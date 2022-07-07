@@ -14,15 +14,3 @@ class Interface():
         tree=Trainer.load_classifier()
         return tree.predict(self.read_input())
 
-    def convert_numeric_to_nominal():
-        pass
-        
-
-
-# interface=Interface()
-
-# input=interface.read_input()
-# print(input)
-
-# predict=interface.predict_input()
-# print(predict)

@@ -1,5 +1,0 @@
-
-
-# Install requirements
-
-pip install -r Requirement/requirements.txt
