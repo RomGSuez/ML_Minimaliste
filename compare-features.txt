@@ -1,0 +1,7 @@
+Here are the data features you are studying:
+Index(['sepal length', 'sepal width', 'petal length', 'petal width'], dtype='object')
+4.9;3.0;1.4;0.2;Setosa;0;0;1;
+
+Modify here features values to see how the result evolve:
+Index(['sepal length', 'sepal width', 'petal length', 'petal width'], dtype='object')
+Write here your modification

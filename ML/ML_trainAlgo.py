@@ -11,16 +11,20 @@ import joblib
 class Trainer:
        
     def initialize_classifier():
+
+        iris=pd.read_csv("iris.csv")
+        X = iris[iris.columns[iris.columns!="variety"]]
+        y = iris[iris.columns[iris.columns=="variety"]]
+
         # Load dataset
-        iris = load_iris()
+        # iris = load_iris()
          
-        X = iris.data
-        y = iris.target
+        # X = iris.data
+        # y = iris.target
          
+
         # Split dataset into train and test
-        X_train, X_test, y_train, y_test = \
-            train_test_split(X, y, test_size = 0.3,
-                                random_state = 2018)
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3,shuffle=True)
          
         # Create DecisionTreeClassifier model
         tree = DecisionTreeClassifier(max_depth = 10).fit(X_train, y_train)
