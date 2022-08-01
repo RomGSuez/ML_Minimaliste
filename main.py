@@ -9,8 +9,8 @@ if __name__ == '__main__':
   
     interface=Interface()
  
-    result=interface.predict_input()
+    result=interface.predict_input_classifier()
 
-    with open('result.txt', 'w') as f:
+    with open('result_classifier.txt', 'w') as f:
         f.write(str("species\n"))
         f.write(str(result))

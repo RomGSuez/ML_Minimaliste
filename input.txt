@@ -1,8 +1,0 @@
-PLEASE WRITE YOUR 4 INPUTS FOLLOWING THIS FORMAT
-FORMAT in cm
-
-WRITE HERE:
-
-sepal length;sepal width;petal length;petal width
-5.1;3.5;1.4;0.2
-

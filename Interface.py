@@ -6,8 +6,8 @@ from ML.ML_trainAlgo import Trainer
 
 class Interface():
     
-    def read_input(self):
-        return pd.read_csv("input.txt",delimiter=";",header=3)
+    def read_input_classifier(self):
+        return pd.read_csv("input_classifier.txt",delimiter=";",header=3)
     
     def predict_input(self):
         
