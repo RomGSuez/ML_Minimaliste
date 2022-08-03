@@ -5,6 +5,7 @@ from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 
 from sklearn.tree import DecisionTreeClassifier 
+from sklearn.ensemble import ExtraTreesRegressor
 
 import joblib
 
@@ -20,7 +21,7 @@ class Trainer:
     X_train, X_test, y_train, y_test = \
         train_test_split(X, y, test_size = 0.3,
                             random_state = 2018)
-    
+
     def initialize_classifier():
         
         # Create DecisionTreeClassifier model
@@ -28,18 +29,19 @@ class Trainer:
 
         # Save the model as a pickle in a file
         joblib.dump(tree, 'saved_clf_tree.pkl')
-        
-        
-    
-        
+     
     def load_classifier(): 
         return  joblib.load('ML/saved_clf_tree.pkl')
 
-    
+   
     def initialize_regressor():
-        pass
+        # Create DecisionTreeClassifier model
+        tree = ExtraTreesRegressor(max_depth = 10).fit(X_train, y_train)
 
-    def load_classifier(): 
+        # Save the model as a pickle in a file
+        joblib.dump(tree, 'saved_regressor_tree.pkl')
+
+    def load_regressor(): 
         return  joblib.load('ML/saved_regressor_tree.pkl')
     
 
